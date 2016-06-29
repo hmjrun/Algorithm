@@ -43,7 +43,6 @@ link GetElementById(link H,int i){
 
 //查找单链表 H 中和给定值一样的节点，返回该节点指针
 link GetElementByValue(link H,dataType value){
-	
 	link P = H->next;//令指针P指向头结点 
 	
 	//遍历链表,当前节点存在且
@@ -185,10 +184,6 @@ int main()
 	Merge(G,K);
  	QueryAllNode(G);
 
-	//ListInvert(G);
-	//link a = ReturnNodeByTwoNodeSumMax(G);
-	//printf("%d\n",a->data);
-	//ListDelete(G,2);
-	//QueryAllNode(G);
+	ListInvert(G);
 	return 0;
 }
